@@ -17,4 +17,13 @@
 ### Corrigido
 - Segunda versão
 
+## - 2026-07-15
+### Adicionado
+- Consolidação da estrutura do aplicativo em JavaScript.
+- Funcionalidade dos botões.
+
+### Corrigido
+- Adição das funcionalidades de botão, dicas e contagem de tentativas
+- Terceira versão
+
 
