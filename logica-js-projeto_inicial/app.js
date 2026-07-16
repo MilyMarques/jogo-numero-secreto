@@ -4,6 +4,8 @@
 // let paragrafo = document.querySelector("p");
 // paragrafo.innerHTML = "Escolha um número entre 1 e 10:";
 
+let listaDeNumerosSorteados = [];
+let numeroMaximo = 10;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -22,7 +24,7 @@ exibirMensagemInicial();
 function verificarChute() {
     let chute = document.querySelector("input").value;
     // console.log(chute == numeroSecreto);
-
+ 
     if(chute == numeroSecreto) {
         exibirTextoNaTela("h1", "Acertou!");
         let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
@@ -42,7 +44,21 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-    return parseInt(Math.random() * 10 + 1);
+    // return parseInt(Math.random() * 3 + 1);
+    let numeroEscolhido = parseInt(Math.random() * numeroMaximo + 1);
+    let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
+
+    if(quantidadeDeElementosNaLista == numeroMaximo){
+        listaDeNumerosSorteados = [];
+    }
+
+    if(listaDeNumerosSorteados.includes(numeroEscolhido)) {
+        return gerarNumeroAleatorio();
+    } else {
+        listaDeNumerosSorteados.push(numeroEscolhido);
+        console.log(listaDeNumerosSorteados);
+        return numeroEscolhido;
+    }
 }
 
 function limparCampo() {

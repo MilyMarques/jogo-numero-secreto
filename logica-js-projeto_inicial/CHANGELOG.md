@@ -26,4 +26,10 @@
 - Adição das funcionalidades de botão, dicas e contagem de tentativas
 - Terceira versão
 
+## - 2026-07-15
+### Adicionado
+- Funcionalidade de evitar repetir o número secreto gerado ao criar um novo jogo
+- Limite de número máximo para a adivinhação
+- Quarta versão
+
 
