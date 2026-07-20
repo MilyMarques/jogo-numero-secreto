@@ -32,4 +32,10 @@
 - Limite de número máximo para a adivinhação
 - Quarta versão
 
+## - 2026-07-19
+### Adicionado
+- Leitura da tela pelo Responsive Voice
+- Quinta versão
 
+### Corrigido
+- Número máximo alterado para 100
